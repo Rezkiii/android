@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity4">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#FEFAE0"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/unuse_stroke">
+
+            <ImageView
+                android:src="@drawable/back"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:clickable="true"
+                android:onClick="navigateToMainActivity"
+                android:transitionName="layout_transision"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+
+            android:layout_marginTop="15dp"
+            android:layout_height="150dp">
+
+            <ImageView
+                android:src="@drawable/user"
+                android:layout_width="100dp"
+                android:layout_gravity="center"
+                android:layout_height="100dp"
+            />
+
+            <TextView
+                android:id="@+id/userTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:fontFamily="@font/lexend_exa"
+
+                android:textColor="#779065"
+                android:textSize="20sp" />
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="550dp"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:background="@drawable/box_corner"
+            android:layout_gravity="bottom">
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="150dp"
+                android:background="@drawable/saldo"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/lexend_exa"
+                    android:textColor="#779065"
+                    android:gravity="center"
+                    android:text="Total Keseluruhan : "/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:textSize="23dp"
+                    android:fontFamily="@font/lexend_exa"
+                    android:textColor="#779065"
+                    android:gravity="center"
+                    android:text="Rp 0.00 "/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:background="@drawable/saldo"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:textSize="15dp"
+                    android:fontFamily="@font/lexend_exa"
+                    android:textColor="#779065"
+                    android:gravity="center"
+                    android:text="Ganti Password"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:background="@drawable/logout"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:textSize="15dp"
+                    android:fontFamily="@font/lexend_exa"
+                    android:textColor="#FFFF"
+                    android:gravity="center"
+                    android:text="Logout"
+                    android:clickable="true"
+                    android:onClick="navigateToMainActivity5"
+                    android:transitionName="layout_transition"/>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

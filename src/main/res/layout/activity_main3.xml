@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FEFAE0"
+    android:orientation="vertical"
+    tools:context=".MainActivity3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/unuse_stroke"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:src="@drawable/back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:clickable="true"
+            android:onClick="navigateToMainActivity"
+            android:transitionName="layout_transision"/>
+
+        <TextView
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/lexend_exa"
+            android:gravity="center"
+            android:text="Tambah Data"
+            android:textColor="#779065"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:text="Keterangan :"
+            android:textColor="#779065"
+            android:fontFamily="@font/lexend_exa"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:layout_width="320dp"
+            android:hint="Masukkan Keterangan"
+            android:fontFamily="@font/lexend_exa"
+            android:textSize="14dp"
+            android:id="@+id/keteranganEdt"            android:textColor="#D6F4B8"
+            android:layout_height="50dp"></EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:text="Tanggal :"
+            android:textColor="#779065"
+            android:fontFamily="@font/lexend_exa"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/idEdtDate"
+            android:layout_width="320dp"
+            android:hint="Masukkan Tanggal"
+            android:fontFamily="@font/lexend_exa"
+            android:textSize="14dp"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:textColor="#D6F4B8"
+            android:layout_height="50dp"></EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:text="Jumlah Uang :"
+            android:textColor="#779065"
+            android:fontFamily="@font/lexend_exa"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/jumlahUangEdt"
+            android:layout_width="320dp"
+            android:hint="Masukkan Jumlah Uang"
+            android:fontFamily="@font/lexend_exa"
+            android:textSize="14dp"
+            android:inputType="number"
+            android:textColor="#D6F4B8"
+            android:layout_height="50dp"></EditText>
+
+    </LinearLayout>
+
+    <Button
+        android:onClick="navigateToMainActivity1"
+        android:clickable="true"
+        android:id="@+id/simpanBtn"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:hint="Simpan"
+        android:fontFamily="@font/lexend_exa"
+        android:textSize="23dp"
+        android:background="@drawable/button_corner"
+        android:layout_marginTop="250dp"/>
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
